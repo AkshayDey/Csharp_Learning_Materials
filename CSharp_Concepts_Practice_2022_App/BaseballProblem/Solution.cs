@@ -4,46 +4,7 @@ namespace BaseballProblem
     internal class Solution
     {
         public int CalPoints(string[] operations)
-        {
-            #region OldCode 
-            //List<int> points = new List<int>();
-            //int resultOutput = 0;         
-            //for(int i = 0; i < operations.Length; i++) 
-            //{
-            //    if (operations[i] != "C" && operations[i] != "D" && operations[i] != "+")
-            //    {
-            //        points.Add(Convert.ToInt32(operations[i]));
-            //    }
-            //    else if (operations[i] == "C")
-            //    {
-            //        points.RemoveAt(i - 1);
-
-            //    }
-            //    else if (operations[i] == "D")
-            //    {
-            //        points.Add(points.Last() * 2);
-            //    }
-            //    else if (operations[i] == "+") 
-            //    {
-            //        int resultForAddition = 0;
-            //        List<int> lastTwoElements = points.Skip(Math.Max(0, points.Count - 2)).Take(2).ToList();
-            //        foreach (var allItems in lastTwoElements)
-            //        {
-
-            //            resultForAddition += allItems;
-            //        }
-            //        points.Add(resultForAddition);
-
-
-            //    }
-            //}
-            //foreach (int point in points)
-            //{
-            //    resultOutput += point;
-            //}
-            //return resultOutput;
-            #endregion
-
+        {         
             #region stack
             Stack<int> StackIntItems = new Stack<int>();
 
